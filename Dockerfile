@@ -49,6 +49,10 @@ RUN \
     jpeg-dev \
     openssh \
     zlib-dev \
+    g++ \
+    gobject-introspection \
+    pango \
+    libsass \
 && \
   apk add --no-cache --virtual .build \
     gcc \
@@ -64,6 +68,7 @@ RUN \
       "mkdocs-minify-plugin>=0.3" \
       "mkdocs-redirects>=1.0" \
       "pillow>=9.0" \
+      "mkdocs-with-pdf" \ 
       "cairosvg>=2.5"; \
   fi \
 && \
